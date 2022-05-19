@@ -3229,30 +3229,41 @@ input, select, textarea {
 /* youtube shit */
 
 	.videocontainer{
-		/* position: fixed; */
+		overflow: hidden;
+		position: fixed;
+		min-height: 2160px;
+		min-width: 3840px; 
+		left: 50%;
+		top: 50%;
+    	transform: translate(-50%, -50%);
 		z-index: -1;
+		margin: auto;
+
+
 	}
   
 	iframe {
-		position: fixed;
+		resize: none;
+		position: static;
+		overflow: hidden;
+		/* Make video to at least 100% wide and tall */
 		top: 50%;
 		left: 50%;
-		width: 100vw;
-		height: 100vh;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%,-50%);
+
 	}
 
 
-	  @media (min-aspect-ratio: 16/9) {
-		.video-container iframe {
+	     /* @media (min-aspect-ratio: 16/9) {
+		.videocontainer iframe {
 		  height: 56.25vw;
 		}
 	  }
 	  @media (max-aspect-ratio: 16/9) {
-		.video-container iframe {
+		.videocontainer iframe {
 		  width: 177.78vh;
 		}
-	  }
+	  }     */
 
 
 	#wrapper {
