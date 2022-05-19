@@ -3229,9 +3229,8 @@ input, select, textarea {
 /* youtube shit */
 
 	.video-container{
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
+		/* position: fixed; */
+		z-index: -1;
 	}
   
 	iframe {
